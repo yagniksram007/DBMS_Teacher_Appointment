@@ -17,11 +17,9 @@ db = mysql.connector.connect(
 
 mycursor = db.cursor()
 
-
 @app.route("/")
 def root():
     return jsonify({"message":"server is runnig"})
-
 
 # Route for handling student login
 @app.route('/login-student', methods=['POST'])
